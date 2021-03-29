@@ -1,0 +1,51 @@
+.controls-pets{
+    margin: 50px 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green{
+    background: #38C200;
+}
+
+.button-del-upd{
+    margin: 0 5px;
+}
+
+/* estilos modal */
+
+.modal_addPet{
+    background: rgba(44, 44, 44, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transition: all .5s ease;
+}
+
+.modal_updatePet{
+    background: rgba(44, 44, 44, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transition: all .5s ease;
+}
+
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+<header class="header">
+    
+    <img src="../../../assets/img/beagle.svg" class="beagle-svg" alt="beagle">
+    <img src="../../../assets/img/dog.svg" class="dog-svg" alt="dog">
+    <img src="../../../assets/img/elephant.svg" class="elephant-svg" alt="elephant">
+    <img src="../../../assets/img/cat.svg" class="cat-svg" alt="cat">
+
+    <div class="container content-header">
+
+        <div class="title-page">
+
+            <h1>Comparte tus mascotas</h1>
+
+        </div>
+    
+        <ngb-carousel class="carousel" >
+            <ng-template ngbSlide
+            *ngFor="let pet of pets">
+                <div class="picsum-img-wrapper img-carousel" 
+                    style="background: url({{pet.urlimg}}); 
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;"
+                ></div>
+                <div class="carousel-caption">
+                    <h3>{{pet.nombre}}</h3>
+                    <p>
+                        {{pet.tipo}}
+                    </p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+
+    </div>
+    
+</header>
+
+
